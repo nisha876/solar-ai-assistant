@@ -3,7 +3,7 @@ import google.generativeai as genai
 import os
 import json
 import time
-from solar.filter_key import is_solar_related  # Import the solar query filter
+from filter_key import is_solar_related  # Import the solar query filter
 from dotenv import load_dotenv
 import os
 
@@ -11,7 +11,7 @@ load_dotenv()
 api_key = os.getenv("API_KEY")
 
 # Configure Gemini API
-genai.configure(api_key)
+genai.configure(api_key= api_key)
 
 def get_ai_response(user_input):
     model = genai.GenerativeModel("gemini-pro")  # Using Gemini Pro model
