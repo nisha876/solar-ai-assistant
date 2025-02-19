@@ -1,13 +1,17 @@
 import streamlit as st
 import google.generativeai as genai
 import os
-import config
 import json
 import time
-from filter import is_solar_related  # Import the solar query filter
+from solar.filter_key import is_solar_related  # Import the solar query filter
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+api_key = os.getenv("API_KEY")
 
 # Configure Gemini API
-genai.configure(api_key=config.API_KEY)
+genai.configure(api_key)
 
 def get_ai_response(user_input):
     model = genai.GenerativeModel("gemini-pro")  # Using Gemini Pro model
