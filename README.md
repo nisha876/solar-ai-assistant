@@ -3,11 +3,12 @@ title: "Solar Industry AI Assistant"
 emoji: "☀️"
 colorFrom: "blue"
 colorTo: "green"
-sdk: "streamlit"
-sdk_version: "1.0.0"
+sdk: "gradio"
+sdk_version: "3.50.2"  # Replace with latest Gradio version
 app_file: "app.py"
 pinned: false
 ---
+
 
 
 🌞 Solar Industry AI Assistant
