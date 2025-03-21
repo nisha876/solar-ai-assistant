@@ -1,6 +1,18 @@
+
+import gradio as gr
 import torch
 from transformers import pipeline
-import gradio as gr
+
+model_name = "tiiuae/falcon-7b-instruct"
+
+# Enable offloading if running on Hugging Face
+device_map = "auto" if torch.cuda.is_available() else {"": "cpu"}
+
+pipe = pipeline("text-generation", model=model_name, device_map=device_map, torch_dtype=torch.float16)
+
+def get_ai_response(prompt):
+    response = pipe(prompt, max_length=200, do_sample=True, temperature=0.7)
+    return response[0]["generated_text"]
 
 # Load Hugging Face Model
 model_name = "tiiuae/falcon-7b-instruct"  # Example model
