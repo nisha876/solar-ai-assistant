@@ -43,6 +43,9 @@ Deploy on Hugging Face Spaces
 3. Upload your code files to the repository.
 4. Push changes to deploy.
 
+🌍 MODEL DEPLOYMENT
+https://huggingface.co/spaces/nisha081/solar-ai-assistant
+
 Local Deployment (ZIP Package)
 1. Package all files and dependencies.
 2. Provide installation and execution instructions.
