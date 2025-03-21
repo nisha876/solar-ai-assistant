@@ -81,3 +81,6 @@ Future Improvements
 Conclusion
 
 The Solar Industry AI Assistant is a scalable and deployable project designed to educate and assist users in understanding solar energy. Future iterations can further enhance its capabilities by integrating more advanced AI features and expanding its dataset.
+
+
+
