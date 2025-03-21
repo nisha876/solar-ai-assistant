@@ -51,6 +51,8 @@ Deploy on Hugging Face Spaces
 
 4. Push changes to deploy.
 
+MODEL DEPLOYMENT
+https://huggingface.co/spaces/nisha081/solar-ai-assistant
 
 Example Conversations
 
